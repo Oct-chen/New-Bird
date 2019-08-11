@@ -1,0 +1,27 @@
+#Fibonacci in simple code
+a, b = 0,1  #多变量赋值时，只需将不同变量以及要赋的值用逗号按顺序隔开即可
+While b < 10000:
+    print(b, end="")    #关键词end的使用可以将结果输出到同一行
+    a, b = b, a + b
+'''The first row contains a Multivariable assignment.And finally a gets the number 0 and b gets 1.
+The last row is same as the first action.
+The code a, b = b, a + b is equivalent to b = n; a + b = m; a = n; b = m.Thus you can understand it clearly
+'''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+#Maybe we can coding the Fibonacci in another way in recurrence
+n = int(input())
+def fab(n):
+    if n < 1:
+        print("输入错误")
+        return -1
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fab(n-1) + fab(n-2)
+print(fab(n))
+'''
+This programming is different from the former, which output the final result.And because of the recurrence, it will occupy a large
+number of the RAM.
+
