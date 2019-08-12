@@ -1,2 +1,2 @@
 # New-Bird
-I'm a new bird inpython
+I'm a new bird in python
